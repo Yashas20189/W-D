@@ -1,0 +1,55 @@
+h1,h3 {
+ color: #b92b27;
+}
+/* you can write h1,h3 together */
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+/* *-> it is a universal selector  */
+
+#login{
+    background-color: white;
+}
+
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+/* we are using id selector -> use #id */
+
+.upvote{
+    background-color: green;
+}
+/* using class selector  -> use .class*/
+
+/* class -> for grouping all same type things 
+id -> is for individual identity */
+
+nav ul a {
+    color: green;
+}
+
+p a{
+    color: blueviolet;
+}
+/* descendant selector -> it select things only a part */
+
+p + h3 {
+   color: aqua;
+}
+/* sibling combo -> used to apply all the css property which is just after h3 heading */
+
+div > input{
+    background-color: rgb(21, 204, 82);
+}
+/* child combo -> used to apply on element which is inside parent */
+
+input[ type="text"]{
+    color: red;
+}
+
+input[ type="password"]{
+    color: green;
+}
+/* attribute selector */

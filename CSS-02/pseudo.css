@@ -1,0 +1,23 @@
+/* Pseudo class -> A keyword which is added to selector that specifies a special state of a selected element */
+/* Synatx -> selector/element:keyword */
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+h3:hover{
+    text-decoration: underline;
+}
+/* hover -> an event that happens when a user moves their mouse over an element without clicking it */
+
+button:active{
+    background-color: pink;
+    color: black;
+}
+/* active -> an event that happens when a user click their mouse over an element */
+
+input[type="radio"]:checked + label{
+    color: green;
+}
+/* need to add label -> need apply this color on label not on radio */

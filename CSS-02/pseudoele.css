@@ -1,0 +1,30 @@
+h1::first-letter{
+    color: green;
+}
+
+p::first-line{
+    color: rgb(42, 165, 161);
+  
+}
+
+p::selection{
+ background-color: rgb(255, 0, 43);
+}
+/* when you select any line it will be done by selection tool */
+
+/* Cascading:
+1. last css code only work if css code is written for more than once 
+2. selector(eg- h3) should be same */
+
+/* Selector specificity:
+1. order -> id > class/pseudo-class/attribute > element/pseudo-element
+2. more selector > less selector
+3. if specificity is same -> use cascading
+
+Example:
+h3 -> 001
+.myclass:hover -> 020*
+div p -> 002
+p -> 001/
+
+/* !important; -> it won't change by any means  */

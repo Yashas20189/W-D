@@ -1,0 +1,20 @@
+div{
+    background-color: yellow;
+}
+
+form{
+    background-color: red;
+}
+
+input{
+    background-color: inherit;
+}
+
+button{
+    background-color: inherit;
+}
+
+/*1. Every element tries to inherient properties from grandparents or parent if they donot have their specified property 
+2. button/input cannot inherit the property of grandparent (so we need to do it separetly)*/
+
+/* to add color use -> 1.canava 2.coolors 3.colorspace*/
