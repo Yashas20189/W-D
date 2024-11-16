@@ -1,0 +1,17 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    animation: font-animation 2s ease-in 0s 3 normal ;
+}
+
+/* Blueprint of animation */
+@keyframes font-animation{
+    from{font-size: 20px;}
+    to{font-size: 40px;}
+}
+
+/* Animaiton shorthand -> name || time-duration || timing-function || delay || iteration-count ||direction */
+
+/* U can use percentage to change animation like 0,20,40,60,80,100 */

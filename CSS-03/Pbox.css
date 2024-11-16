@@ -1,0 +1,31 @@
+#Outer{
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+}
+.inner{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 100%;
+    /* background-color: red; */
+}
+
+#green{
+    background-color: green;
+}
+
+#red{
+    background-color: red;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+
+/* display is used to show block/inline */
+/* percentage -> define size as relative to an elements's parent eg - 33% 
+em -> define size as relative to an elements's parent or self eg - 3em 
+rem -> define size as relative to an elements's root element(in html doc it's html is root) eg - 3rem */

@@ -1,0 +1,38 @@
+Operations in JS
+1.Addition - a+b
+2.Subtraction - a-b
+3.Multiplcation - a*b
+4.Division - a/b
+5.Modulo - a%b
+6.Expo -a**b
+
+NaN - Not a Number
+0/0
+
+Operator Precendence ->
+PEDMAS - (),**,* / %, +-
+
+let -> It is used to declare a variable
+let a = 5; or let b;
+
+constant -> values of constant can't be changed with re-assignment 
+const year = 2025
+year = 2026 //error
+
+New concept
+let age = 23;
+age + 2; // age = 23
+age = age+2; // age = 25 bcz of assignment Operations
+
+Assignment Operator:
+a=a+1 -> a+=1
+a=a-1 -> a-=1
+a=a*1 -> a*=1
+
+Way of writing identifiers
+camelCase -> totalPrice (example)
+
+TypeScript -> it is static type of code lanuguge 
+
+null -> Intentional absence of any object values
+undefined -> Not been assigned a value of type undefiend

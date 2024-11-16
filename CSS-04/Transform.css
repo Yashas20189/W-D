@@ -1,0 +1,46 @@
+section{
+    margin-top: 100px;
+}
+
+div{
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    background-color: #7aa874;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+div:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+
+div:nth-of-type(3n){
+    background-color: #ebb02d;
+}
+
+/* transform -> applied for all element*/
+
+#one{
+    transform: rotate(45deg);
+}
+
+#two{
+    transform: scale(.5);
+}
+
+#three{
+    transform: translate(15px,5px);
+    /* (x,y) */
+}
+
+#four{
+    transform: skew(30deg);
+}
+
+/* box shadow -> x-offset y-offset blur_radius color */
+
+#shadow{
+    background-color: red;
+    box-shadow: 2px 2px 80px rgb(29, 163, 241) ;
+}

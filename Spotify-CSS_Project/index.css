@@ -1,0 +1,38 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    /* New topic overflow -> hidden, scroll, auto */
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+background-color: red;
+color: black;
+width: 300px;
+border-radius: 1rem; 
+/* 1rem = 16px */
+}
+
+.main_content{
+background-color: yellow;
+color: black;
+flex: 1;
+border-radius: 1rem; 
+overflow: auto;
+}
+
+.music_player{
+background-color: pink;
+color: black;
+position: fixed;
+bottom: 0;
+width: 100%;
+height: 72px;
+}

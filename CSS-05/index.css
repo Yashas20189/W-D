@@ -1,0 +1,86 @@
+#container{
+    /* this for just the outside container */
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    /* This is for all color boxes */
+    height: 50px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+#org{
+    flex-basis: 200px;
+    flex-grow: 2;
+}
+
+#blue{
+    flex-basis: 200px;
+    flex-grow: 2;
+}
+/* They have two main things
+1.Main axis
+2.Cross axis*/
+
+/* Flex -> 
+allows you to create flexible layouts by adjusting the alignment, spacing, and order of elements within a container 
+ flex-direction which will come first and last*/
+
+/* Flex direction:
+1. row -> main axis, left to right 
+2. row-reverse -> main axis, right to left
+3. column -> main axis, top to bottom 
+4. column-reverse -> main axis, bottom to top*/
+
+
+
+/* justify -> Is for main axis 
+ types:
+ 1.flex start
+ 2.flex end
+ 3.center
+ 4.space-between -> no corner space
+ 5.space-around -> 50 each corner space
+ 6.space-evenly -> equal space for all*/
+
+
+ /* Wrap: 
+ 1.nowrap -> no wrap
+ 2.wrap -> wrap 
+ 3.wrap-reverse -> cross axis reverse direction*/
+
+
+ /* align-items: 1.Is for cross axis || 2.Is for group of align 
+ Types: 
+ 1.flex-start -> top
+ 2.flex-end -> bottom
+ 3.center
+ 4.baseline -> all have same base  */
+
+
+/* align self: 
+1. Acts along cross axis 
+2. Is only for single align 
+3. Priority order: align-self > align-items */
+
+
+/* Flex-basis: That sets the initial size of a flex item before it grows or shrinks w.r.t main axis (R/C)
+1. flex-grow
+2. flex-shrink */

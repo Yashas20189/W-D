@@ -1,0 +1,46 @@
+/* top -> measured from top
+bottom -> measured from bottom
+right -> measured from right
+left -> measured from left */
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border: 3px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+
+#static{
+    background-color: yellow;
+    position: static;
+    top: 100px;
+    left: 100px;
+     /* No changes can be seen after giving top and left*/
+}
+
+#relative{
+    background-color: yellow;
+    /* This is relative to itself from it's own position */
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#absolute{
+    background-color: yellow;
+    /* This is relative to container */
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+#fixed{
+    background-color: yellow;
+    /* fixed at screen even when you scroll down */
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}

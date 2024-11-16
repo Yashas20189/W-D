@@ -1,0 +1,28 @@
+h1{
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+@media (min-width:200px){
+    h1{
+        background-color: green;
+    }
+}
+
+@media (max-width:400px){
+    h1{
+        background-color: brown;
+    }
+}
+
+@media  (min-width:200px) and (max-width:400px){
+h1{
+    background-color: azure;
+}
+}
+
+@media (orientation:protrait){
+    h1{
+        background-color: darkgoldenrod;
+    }
+}

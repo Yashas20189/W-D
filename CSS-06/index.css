@@ -1,0 +1,41 @@
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 60px 60px 60px 60px;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 10px 30px;
+    justify-content: start;
+}
+
+.item{
+    height: 50px;
+    width: 100px;
+    background-color: greenyellow;
+    border: 2px solid black ;
+    text-align: center;
+}
+
+/* .one{
+    grid-column: 1/3;
+}
+
+.two{
+    grid-row: 1/4;
+} */
+
+/* grid-gap -> row gap || coloumn gap */
+/* gird-column -> start coloumn/ end coloumn */
+
+
+/* 
+Horizontal:
+justify-items (container)
+justify-self (item) 
+
+Vertical:
+align-items (container)
+align-self (item)
+
+*/

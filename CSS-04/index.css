@@ -1,0 +1,30 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255,0,0,0.25);
+}
+/* It will only act on colour */
+
+#Opacity{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 0, 0); 
+    opacity: 0.25;
+}
+/* It will act on colour, letters and etc */
+
+#Tran{ 
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    /* Duration while it is on top */
+    transition-duration: 1s; 
+    /* Duration while it is going out */
+    transition-delay: 1s;
+    transition: margin-top 20s ease-in-out 0.2s;
+}
+
+#Tran:hover{
+    background-color: black;
+    border-radius: 50%;
+}
