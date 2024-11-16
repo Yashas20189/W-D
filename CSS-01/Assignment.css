@@ -1,0 +1,31 @@
+body{
+    background-color: wheat;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    color:	#964B00 ;
+    line-height: 30px;
+}
+h1{
+    color: red;
+}
+h3{
+    color: black;
+}
+a{
+    color: green;
+    text-decoration: none ;
+}
+button{
+    color: blueviolet;
+    background-color: white;
+}
+textarea{
+    color: black;
+}
+span{
+    text-decoration: underline;
+}
+
+/* span make a differnt group from others  */

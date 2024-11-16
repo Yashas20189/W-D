@@ -1,0 +1,13 @@
+h1{
+    color: orange;
+    background-color: grey;
+}
+p{
+    color: red;
+    background-color: blue;
+}
+
+/* use colour picker from google to get rgb and hex codes 
+basic:
+1. rbg - red,green,green
+2. hex codes - 16 numbers from which you can get new colour*/

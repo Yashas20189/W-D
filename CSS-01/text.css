@@ -1,0 +1,33 @@
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 10px;
+    font-size: 50px;
+    }
+
+h2{
+    font-weight: 800;
+     /* bolder - 800 */
+     text-decoration: red  overline;
+}
+p1{
+    font-weight: 400;
+    /* normal - 400 */
+    text-decoration: wavy line-through;
+    line-height: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p2{
+    text-decoration: dotted underline;
+    line-height: 2.5;
+}
+
+/* Font-weight just to increase the font size between 100 to 900 */
+/* text dec: lines- underline,overline,line-through,(none to remove default one) // colour // wavy,dotted,double -> for more check it on mdn  */
+/* line height: distance between two lines */
+/* letter spacing -> gap between letters */
+/* font family -> keeping font for text */
+
+
+/* 96 pixel = 1 inch */
