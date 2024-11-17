@@ -13,3 +13,6 @@ console.log(process.argv);
 // module.export
 const math = require("./math");
 console.log(math);
+
+const info = require("./Fruits")
+console.log(info);
