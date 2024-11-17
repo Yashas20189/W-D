@@ -9,4 +9,6 @@
 // 3. then write export in index.js
 // 4. after write require in apple.js
 
+// import is used collect only a selected part of code
+
 module.exports = 123;
