@@ -46,7 +46,7 @@ app.listen(port,() => {
 
 // more info ->
 
-// view -> used tp create templates
+// view -> used to create templates
 // app.get (res.send) is used to receive request and send response (for small file)
 // app.get (res.render(home.ejs)) is used to send big files
 // nodemon Backend-03/index.js -> You can run node outside the directory at web dev

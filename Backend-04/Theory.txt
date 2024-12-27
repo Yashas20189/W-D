@@ -1,0 +1,52 @@
+In index.js ->
+
+1. require express, url encode, ejs, paths of view and public
+2. making variable post using let
+3. 
+app.get("/posts",(req,res) =>
+res.render("index.ejs"); -> used to render without any data
+res.render('index.ejs', { posts: posts }); -> used to render with data from index.js to index.ejs
+
+
+Breakdown of req,res
+
+request is send to /posts from user
+response is send back to user from index.ejs
+
+
+In index.ejs ->
+
+1. use basic structure of html
+2. uses basic symbols like <%= %> to make layout 
+3. using anchor tag to redirect /posts/new to create new post
+
+
+How to Index route or give initial data using express, rest, ejs?
+
+1. write manual data in index.js (let posts = [ ] )
+2. use app.get("/posts",(req,res) => to get request from user on local host:8080/posts
+3. res.render('index.ejs', { posts: posts }); -> used to render with data from index.js to index.ejs
+where,
+index.ejs -> has layout 
+posts -> has data 
+
+
+How to create new route or add data?
+
+1.app.get("/posts/new",(req,res) -> req from user at /posts/new
+
+2. res.render("new.ejs"); -> response to user to complete filling new.ejs where it collects username and content for the post
+
+3. After clicking Submit button data is passed to /posts 
+
+4. app.post("/posts",(req,res)=> {
+   let{username,content} = req.body;
+post -> used to collect data from the body (like username,content)
+get -> used to collect data from the user input (like /post/:id -> id is collected)
+
+5. posts.push({username,content});
+   res.redirect("/posts");
+data is pushed to posts array
+then redirects to /posts with adding data 
+
+
