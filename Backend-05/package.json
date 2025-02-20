@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@faker-js/faker": "^9.3.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "rest": "^2.0.0"
+  },
+  "name": "backend-05",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yashas",
+  "license": "ISC",
+  "description": ""
+}
