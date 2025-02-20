@@ -1,0 +1,26 @@
+Being a successful GSoC contributor requires you to communicate with your mentor and the community regularly. 
+
+GSoC is a significant time commitment, don’t expect an hour or two a day in an internet cafe to be enough!
+
+
+From AC
+
+Go to their website -> developer -> GitHub -> read the about section ->read the programming language -> Read README
+
+ceph/ceph -> organisation name/project in top left corner
+
+In GitHub ppl section you can get mentors
+
+connect with them -> Google them!! - discord, mail, telegram, slack 
+
+Issues -> Good for beginners -> read the details -> if it is solved -> files changed -> can give review(top right corner) 
+
+Connection and contribute is the key for selection
+
+
+
+Proposals submission:
+
+submit it before 5 days from deadline so that you can feedback from your mentors 
+
+watch video to how to make good propsal

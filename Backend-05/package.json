@@ -3,7 +3,10 @@
     "@faker-js/faker": "^9.3.0",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
-    "rest": "^2.0.0"
+    "mysql2": "^3.12.0",
+    "override": "^0.0.1",
+    "rest": "^2.0.0",
+    "uuid": "^11.0.3"
   },
   "name": "backend-05",
   "version": "1.0.0",

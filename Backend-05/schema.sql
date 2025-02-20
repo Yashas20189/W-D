@@ -1,0 +1,19 @@
+CREATE DATABASE College;
+
+USE College;
+
+CREATE TABLE user(
+    id INT PRIMARY KEY,
+    name VARCHAR(50) UNIQUE,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(50) NOT NULL
+);
+
+SHOW TABLES;
+
+SHOW * FROM user;
+
+ALTER TABLE user MODIFY id VARCHAR(36);
+
+
+USE College;
