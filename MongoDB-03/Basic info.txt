@@ -1,0 +1,127 @@
+Basic info
+
+1.
+npm init -y
+npm i express
+npm i ejs
+npm i mongoose
+npm i nodemon
+
+2. go to npm website// mongoose website for more information
+
+3. we can get inital set up guide from google 
+
+4. For mongoose, express we can get inital set up lines
+for ejs need to write on own
+
+5. Extra need to be added in mongoose file
+
+main()
+.then(() =>{
+    console.log("Connection successful");
+})
+.catch(err => console.log(err));
+
+6. for ejs need to add:
+
+const path = require("path");
+
+app.set("veiws", path.join(__dirname,"views"));
+app.set("view engine","ejs");
+
+7. to use mongo shell
+
+need to type -> mongosh -> show dbs -> use db_name -> show collections ->
+
+db.collection_name.find() // to find what is there in the collections
+db.collection_name.deleteMany({}) // to delete all files in the doc
+
+9. app.set("view engine","ejs");
+app.set("views", path.join(__dirname,"/views"));
+
+used to render files from view(having html file) to local host 
+
+10. app.use(express.static(path.join(__dirname,"public")));
+
+used to attach css files with ejs(html files) to make it look better 
+
+
+
+11. Generally I get error from ejs concept -> to find solution use ChatGpt
+
+12. To CREATE a new chat
+1. create button in index.ejs - adding action method as GET in form
+2. This will redirect to GET -/chats/new
+3. will give you form render
+4. Post -/chats will add the new chat to database
+
+13. In this project
+
+chat.js -> creating a schema (inside models)
+init.js -> initialize data for the schema
+index.js -> main place where we interlink all the files
+index.ejs -> html file (inside veiws)
+style.css -> css file (inside public)
+
+14. how to link btwn files:
+
+chat.js to index.js -> 
+module.exports = Chat;                           (chat.js)
+const Chat = require("./models/chat.js");        (index.js)
+
+chat.js to init.js ->
+module.exports = Chat;                           (chat.js)
+const Chat = require("./models/chat.js");        (init.js )
+
+init.js to index.js ->
+Chat.insertMany                                    (init.js )
+await Chat.find();                                 (index.js)
+
+index.ejs to index.js ->
+app.set("view engine","ejs");
+app.set("views", path.join(__dirname,"/views"));    (index.js)
+
+style.css to index.ejs ->
+ <link rel="stylesheet" href="style.css">           (index.ejs)
+
+style.css to index.js ->
+app.use(express.static(path.join(__dirname,"public")));    (index.js)
+
+15. <form method="GET" action="/chats/new">
+        <button>New Chat</button>
+    </form>
+
+this used to redirect a button click to new page 
+
+for that we use "Method & Action"
+
+16. Use GET when you want to retrieve data without modifying the server state, and the data is small and not sensitive.
+
+Use POST when you need to submit or modify data, especially when dealing with larger or sensitive information.
+
+They use form - method and action 
+
+17.app.use(express.urlencoded({ extended: true }));
+
+see the screenshoot
+
+18.chech date() in folder
+
+19. to EDIT 
+
+index.ejs -> inside msg div -> create a button inside form - 
+method:GET, action:chats/id/edit
+
+index.js -> create edit route -> then make edit.ejs template
+
+
+20.let {id} = req.params; -> learn more about this
+
+21.Two new things
+
+a. findById -> used to search through database - so it is async function
+2. if .then and .catch is not used in it -> you need to use async and await for it
+
+22. npm install method-override -> more in detail see the screenshot
+
+23.In HTML forms, we primarily use POST and method override (to simulate PUT, PATCH, or DELETE) instead of GET for actions like updating or deleting data
