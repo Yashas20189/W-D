@@ -12,9 +12,10 @@
     <form method="POST" action="/chats/<%= chat._id%>?_method=PUT"> 
         <textarea name="msg" rows="5" cols="50">
             <%= chat.msg %>
-     <!-- we primarily use POST and method override instead of GET for actions like updating or deleting data -->
         </textarea>
         <button>Edit</button>
     </form>
 </body>
 </html>
+
+  <!-- we primarily use POST and method override instead of GET for actions like updating or deleting data -->
