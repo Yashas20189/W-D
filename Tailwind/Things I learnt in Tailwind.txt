@@ -1,0 +1,17 @@
+Things I learnt in Tailwind
+
+1. need to connect to tailwind using CDN
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+2. After adding the above link
+h1 like header won't work - all of them will give same font only 
+
+3.PostCSS or CLI -> generally not required for freshers so I am skipping but added its' Photo-03
+
+4.Photo-04
+-> It is all about Typography & Styling 
+-> Need to website of tailwind to use it's parameter inside class
+
+5.Photo-05
+-> It is all about colors and spacing
+-> Need to website of tailwind to use it's parameter inside class
