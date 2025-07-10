@@ -1,0 +1,18 @@
+Backend-07 Quick sneak peek:
+
+1. what is dev stage and production stage 
+2. how can we throw own error using "throw" 
+3. learnt about default error handlers
+4. learnt that we can write our own error handlers
+can learn more from express error handling module
+5. what is client side and server side
+6. difference between calling next() and next(err) in middleware 
+7.
+
+
+
+
+Will do it later:
+1. Custom error classes (Medium)
+2. Default status & Messages (Easy)
+3. Need to last 5 classes

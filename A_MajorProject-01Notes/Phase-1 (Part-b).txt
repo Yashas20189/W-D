@@ -1,0 +1,91 @@
+Project - Phase1(Part-b)
+
+-> Photo-31 to Photo-
+
+-> Things I left or need to see it again
+
+-> Things that I learnt
+
+1. Learn about ejs mate from NPM website 
+a. install - require it
+b. read Usage part - VIP
+c. see from video how the usage part is used
+
+2. learn - includes/partial from ejs
+
+3. what is boilerplate?? in terms of layouts -> Photo-32
+
+4. why do we create public file
+create only static files in it(like css styling)
+why do we call -> app.use(express.static (path.join(__dirname,"/public"))); for static files
+
+5. read about Bootstrap
+topic that are imp in that are -> nav bar (anchor tag once - read first),
+
+6. includes from ejs -> used to add small details to website
+
+7. Modularity while doing web dev is appreciated - read why??
+
+8. <%- include("../includes/navbar.ejs") %>
+learn about this topic and code
+
+9. explore the website 
+font awesome -> https://fontawesome.com/
+font awesome cdn -> https://cdnjs.com/libraries/font-awesome 
+
+10.!important -> override in css
+
+11. in footer just see many website what are they keeping -> might be social media, privacy terms and condition, company's info 
+
+-> Just look at this small topic from bootstrap 
+
+12. "<%= listing.image.url %>" -> why url is needed??
+
+13. Learn more about how to use google fonts?? 
+
+14. have issues of update route please fix it!!
+
+15. offset property in css topic from W3
+
+1. navbar-expand-lg/md??
+2. border-bottom
+3. rem
+4. sticky-top
+5. &copy
+6. listing.price.toLocaleString("en-IN")
+7. row-cols-lg/md/sm-3
+
+
+-> Takeaway from the class is 
+
+1. Read about card,navbar,footer and more from Bootstrap
+2. correct the update route
+3. Nothing much new concept only learning how to add more style 
+4. Learn more about css topic from W3
+5. If you have any doubt what to read then come to page -> see what type styling you have used then go and learn more about that
+
+
+
+-> which file does what in terms of css ->
+1. navbar.ejs -> for upper part of website
+2. footer.ejs -> for lower part of website
+3. index.ejs -> for the main body content
+4. edit.ejs -> edit page
+5. new.ejs -> for adding new listing
+6. show.ejs -> for showing in detail of the card when clicked
+
+-> Learning more about client-side validation - (Form Validation) from bootstrap
+Success text -> Validation is okay
+Failure text -> Validation failed 
+
+Learn more about valid-feedback and invalid-feedback
+
+-> Need to copy image address for editing and creating a new listing 
+
+-> WrapAsync file will used to check error in the file using try and catch block 
+
+-> Learn about npm package: joi
+
+-> Need to see last video of Phase1 part-c
+
+-> 

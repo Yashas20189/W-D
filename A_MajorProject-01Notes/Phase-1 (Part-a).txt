@@ -1,0 +1,182 @@
+Phase-1 (Part-a) 
+
+-> Photo-01 to Photo-30
+
+-> Things I left or need to see it again
+
+-> Things that I learnt
+
+1. Basic SetUp:
+
+const express = require('express')
+const app = express()
+const mongoose = require('mongoose');
+const path = require("path");
+
+app.set("veiws", path.join(__dirname,"views"));
+app.set("view engine","ejs");
+app.use(express.static(path.join(__dirname,"public")));
+
+
+main()
+.then(() =>{
+    console.log("Connection successful");
+})
+.catch(err => console.log(err));
+
+
+async function main() {
+  await mongoose.connect('mongodb://127.0.0.1:27017/WanderLust');
+}
+
+app.get("/",(req,res) =>{
+    res.send("Hi, I am root");
+});
+
+app.listen(8080,() =>{
+    console.log("Server is listening to port 8080");
+});
+
+2. module.exports -> screenshot
+
+3. set:(v) -> more info about it
+
+4. You can download copyright free images
+From unsplash -> copy image address
+
+5. "./models/listing.js" -> what does this mean ->  Screenshot
+
+6. init folder -> is a folder where we store our initial data (large in amount like name of hotel, location and etc)
+
+7. Photo-05: 
+module.exports = { data: sampleListings }
+await Listing.insertMany(initData.data)
+
+why do we have to add ''.data'' to get key data
+
+8.Photo-06+07:
+Error -> In the old code, you had only one field (image), but the data you were providing (with both filename and url) required two separate fields. The fix was to adjust the schema to accommodate both filename and url as separate fields inside the image object.
+
+9. When can .then() be used?
+.then() can be used with any function that returns a Promise. Here are some common scenarios:
+
+1.Handling Asynchronous Operations
+->Any function that performs an async task (like fetching data, reading files, making API calls, etc.) and returns a promise can use .then() to handle the result.
+
+2.Database Queries (like Mongoose in Node.js)
+-> As you've used with Listing.find({}), functions that interact with databases (e.g., MongoDB with Mongoose, or other DB clients) often return a promise
+
+3.Promise Chains: 
+-> You can chain multiple .then() calls to perform sequential asynchronous operations. Each .then() receives the result of the previous one.
+
+4.Error Handling:
+->.then() can also be followed by .catch() to handle errors in the promise chain.
+
+10.Photo-08:
+Difference between . and ..
+
+11.Photo-09:
+Difference between parent and current directory 
+Have a good example in it
+
+12.Photo-10:
+The const keyword in JavaScript is used to declare a constant variable
+
+13.Photo-11:
+learnt about for...of Loop
+Used to iterate over iterrable objects like arrays, strings, sets, etc.
+
+14.Photo-12:
+for...in Loop
+Used to iterate over the properties (keys) of an object.
+
+15.Photo-13: 
+forEach() Method
+Specifically used for arrays. It executes a provided function once for each array element.
+
+16.Photo-14:
+Basic for Loop
+Used to iterate over a block of code a specific number of times.
+
+17.Photo-15:
+why "listings/index" used in res.render("listings/index", { allListings });
+
+18.Photo-16:
+we get to know 
+res.render("./listings/index.ejs",{ allListings }); should be used as res.render("listings/index", { allListings });
+
+19.Photo-17:
+what is anchor tag?
+<a href="/listings/ <%= listing._id %>"> <%= listing.title %> -> after clicking on that you will redirected to page - /listing/:id
+
+20.Photo-18:
+URL examples for each route: + Tells which method we use
+
+21.Photo-19:
+tells which routes are async and which are not
+
+22.Photo-20:
+tells why they are async and which are not
+
+23.Photo-21:
+More about async 
+
+SHOW ROUTE:
+
+24.Photo-22:
+let{id} = req.params;
+
+1. what does params do??
+2. what does {} means
+
+25.Photo-23:
+tells you how to add rupees symbol
+
+26. toLocaleString("en-IN") -> to get (,) according to Indian standards
+
+NEW ROUTE
+27.Photo-24:
+comparing new route with index route. telling why it is different
+
+28.Photo-25:
+difference between server and database
+
+29.Photo-26:
+Example of server -> express and DB -> mongoDB
+
+30.Photo-27/28:
+    <form method="GET" action="/listings">
+        <button>Create New Listing</button>
+    </form>
+
+explain this part by part
+
+one more points
+Get : fetches the form("Create New Listing") from server
+put : is used to add it 
+
+31.Photo-29:
+learnt about -> The route parameter :id in /listings/:id captures the value from the URL (e.g., /listings/123 captures 123 as id). This value is accessible in your route handler via req.params.id.
+
+32.Photo-30:
+About post to put conversion
+
+33. How to convert POST request to PUT request:
+
+1. Server/Terminal -> Install npm install method-override
+
+2. Main server file(like app.js) -> Add this part
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
+
+3. Secondary file(like edit.js) -> Add this part
+  <form method="POST" method="/listings/<%=listing._id%>?_method=PUT">
+
+Need to learn:
+
+dot notation -> lisitng.title 
+
+
+
+
+

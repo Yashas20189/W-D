@@ -1,0 +1,60 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<body>
+  <div class="row mt-3">
+    <div class="col-8 offset-2">
+      <h3>Create a New User</h3>
+
+      <form method="POST" action="/users">
+
+       <div class="mb-3">
+  <label for="name" class="form-label">Name</label>
+  <input type="text" id="name" name="user[name]" class="form-control" placeholder="Enter name" required>
+  <div class="valid-feedback">Name looks good!</div>
+  <div class="invalid-feedback">Please enter your name!</div>
+</div>
+
+        <!-- Username -->
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" id="username" name="user[username]" class="form-control" placeholder="Enter username" required>
+          <div class="valid-feedback">Username looks good!</div>
+          <div class="invalid-feedback">Please enter a username!</div>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="user[email]" class="form-control" placeholder="example@gmail.com" required>
+          <div class="invalid-feedback">Please enter a valid email!</div>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" name="user[password]" class="form-control" placeholder="********" required>
+          <div class="invalid-feedback">Password is required!</div>
+        </div>
+        
+        <button class="btn btn-dark mt-3">Create User</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap form validation script -->
+  <script>
+    (() => {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+</body>

@@ -1,0 +1,29 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<div class="row mt-3">
+  <div class="col-8 offset-2">
+
+    <h3>Edit User</h3>
+
+    <form action="/users/<%= user._id %>?_method=PUT" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+
+      <!-- Username -->
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" name="user[username]" value="<%= user.username %>" class="form-control" required>
+        <div class="invalid-feedback">Please enter a valid username!</div>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" name="user[email]" value="<%= user.email %>" class="form-control" required>
+        <div class="invalid-feedback">Please enter a valid email!</div>
+      </div>
+      
+        <button class="btn btn-dark mt-3">Update User</button>
+
+    </form>
+
+  </div>
+</div>
